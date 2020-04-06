@@ -37,24 +37,19 @@ const mergeTwoLists = function(l1, l2) {
   //which ever node was lower, get it's next node,
   //which ever of those nodes is lower, set it as the current/head node's next
   while (p !== null || q !== null) {
-    console.log("p", p);
-    console.log("q", q);
-
     if (q === null) {
-      p = p.next;
       curr.next = p;
+      p = p.next;
     } else if (p === null) {
-      q = q.next;
       curr.next = q;
+      q = q.next;
     } else if (p.val <= q.val) {
-      p = p.next;
       curr.next = p;
+      p = p.next;
     } else {
-      q = q.next;
       curr.next = q;
+      q = q.next;
     }
-
-    console.log("curr", curr);
     curr = curr.next;
   }
   return dummyHead.next;

@@ -35,23 +35,23 @@ describe("linkListHelpers", () => {
     expect(resultHead.next.next.val).toEqual(8);
   });
 
-  //   it("can merge two ordered lists", () => {
-  //     const linkedListA = new LinkedList({ ListNode });
-  //     linkedListA.add(1);
-  //     linkedListA.add(2);
-  //     linkedListA.add(4);
+  it("can merge two ordered lists", () => {
+    const linkedListA = new LinkedList({ ListNode });
+    linkedListA.add(1);
+    linkedListA.add(2);
+    linkedListA.add(4);
 
-  //     const linkedListB = new LinkedList({ ListNode });
-  //     linkedListB.add(1);
-  //     linkedListB.add(3);
-  //     linkedListB.add(4);
+    const linkedListB = new LinkedList({ ListNode });
+    linkedListB.add(1);
+    linkedListB.add(3);
+    linkedListB.add(4);
 
-  //     const resultHead = mergeTwoLists(linkedListA.head, linkedListB.head);
-  //     expect(resultHead.val).toEqual(1);
-  //     expect(resultHead.next.val).toEqual(1);
-  //     expect(resultHead.next.next.val).toEqual(2);
-  //     expect(resultHead.next.next.next.val).toEqual(3);
-  //     expect(resultHead.next.next.next.next.val).toEqual(4);
-  //     expect(resultHead.next.next.next.next.next.val).toEqual(4);
-  //   });
+    const resultHead = mergeTwoLists(linkedListA.head, linkedListB.head);
+    expect(resultHead.val).toEqual(1);
+    expect(resultHead.next.val).toEqual(1);
+    expect(resultHead.next.next.val).toEqual(2);
+    expect(resultHead.next.next.next.val).toEqual(3);
+    expect(resultHead.next.next.next.next.val).toEqual(4);
+    expect(resultHead.next.next.next.next.next.val).toEqual(4);
+  });
 });
