@@ -1,1 +1,0 @@
-const findMedianSortedArrays = require('./medianOfTwoSortedArrays')
